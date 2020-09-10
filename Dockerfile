@@ -36,6 +36,9 @@ WORKDIR /root/
 # Copy the Pre-built binary file from the previous stage
 COPY --from=builder /app/main .
 
+# Copy the Pre-built binary file from the previous stage
+COPY --from=builder /app/webscoker.html .
+
 # Expose port 8080 to the outside world
 EXPOSE 8082
 

@@ -16,7 +16,7 @@ func main() {
 	http.HandleFunc("/", home)
 
 	fmt.Println("Test MY App")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8082", nil))
 
 }
 
